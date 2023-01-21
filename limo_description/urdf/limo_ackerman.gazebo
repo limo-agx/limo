@@ -25,13 +25,10 @@
     </gazebo>
 
     <gazebo>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>$(arg robot_namespace)</robotNamespace>
-        </plugin>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
 
         <plugin name="four_diff_controller" filename="libgazebo_ros_ackerman.so">
-            <updateRate>100.0</updateRate>
-            <robotNamespace>$(arg robot_namespace)</robotNamespace>
+            <updateRate>100.0</updateRate>/
             <leftFrontJoint>front_left_wheel</leftFrontJoint>
             <rightFrontJoint>front_right_wheel</rightFrontJoint>
             <leftRearJoint>rear_left_wheel</leftRearJoint>
