@@ -88,12 +88,12 @@
               <!-- Keep this zero, update_rate in the parent <sensor> tag
                 will control the frame rate. -->
               <updateRate>0.0</updateRate>
-              <cameraName>astra</cameraName>
-              <imageTopicName>/astra/color/image_raw</imageTopicName>
-              <cameraInfoTopicName>/astra/color/camera_info</cameraInfoTopicName>
-              <depthImageTopicName>/astra/depth/image_raw</depthImageTopicName>
-              <depthImageCameraInfoTopicName>/astra/depth/camera_info</depthImageCameraInfoTopicName>
-              <pointCloudTopicName>/astra/depth/points</pointCloudTopicName>
+              <cameraName>camera</cameraName>
+              <imageTopicName>/camera/rgb/image_rect_color</imageTopicName>
+              <cameraInfoTopicName>/camera/color/camera_info</cameraInfoTopicName>
+              <depthImageTopicName>/camera/depth/image</depthImageTopicName>
+              <depthImageCameraInfoTopicName>/camera/depth/camera_info</depthImageCameraInfoTopicName>
+              <pointCloudTopicName>/camera/depth/points</pointCloudTopicName>
               <frameName>depth_link</frameName>
               
               <pointCloudCutoff>0.5</pointCloudCutoff>

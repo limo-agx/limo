@@ -60,11 +60,11 @@
             <leftRearJoint>rear_left_wheel</leftRearJoint>
             <rightRearJoint>rear_right_wheel</rightRearJoint>
             <wheelSeparation>0.172</wheelSeparation>
-            <wheelDiameter>0.09</wheelDiameter>
-            <robotBaseFrame>base_footprint</robotBaseFrame>
-            <commandTopic>cmd_vel</commandTopic>
+            <wheelDiameter>0.096</wheelDiameter>
+            <robotBaseFrame>base_link</robotBaseFrame>
+            <commandTopic>/limo/cmd_vel</commandTopic>
             <torque>50</torque>
-            <broadcastTF>true</broadcastTF>
+            <broadcastTF>false</broadcastTF>
             <odometryTopic>odom</odometryTopic>
             <odometryFrame>odom</odometryFrame>
             <covariance_x>0.000100</covariance_x>
