@@ -4,7 +4,7 @@ topics:
   timeout : 0.5
   priority: 10
 - name    : gazebo
-  topic   : dummy_zero
+  topic   : dummy_twist
   timeout : 0.5
   priority: 1
 - name    : external
