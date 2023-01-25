@@ -39,7 +39,7 @@
             <wheelDiameter>0.096</wheelDiameter>
             <robotBaseFrame>base_link</robotBaseFrame>
             <commandTopic>/limo/cmd_vel</commandTopic>
-            <torque>50</torque>
+            <torque>500</torque>
             <broadcastTF>false</broadcastTF>
             <odometryTopic>odom</odometryTopic>
             <odometryFrame>odom</odometryFrame>
