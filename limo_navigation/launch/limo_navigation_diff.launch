@@ -10,23 +10,23 @@
 
 
     <node pkg="amcl" type="amcl" name="amcl" output="screen">
-        <rosparam file="$(find limo_bringup)/param/amcl_params_diff.yaml" command="load" />
+        <rosparam file="$(find limo_navigation)/param/amcl_params_diff.yaml" command="load" />
         <param name="initial_pose_x"            value="0"/>
 		<param name="initial_pose_y"            value="0"/>
 		<param name="initial_pose_a"            value="0"/>
 	</node>      
 
     <!--  ************** map server ***************  -->
-    <node pkg="map_server" type="map_server" name="map_server" args="$(find limo_bringup)/maps/map06.yaml" output="screen" >
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find limo_navigation)/maps/map06.yaml" output="screen" >
     <param name="frame_id" value="map"/>
     </node>
     <!--  ************** Navigation *************** -->
 	<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
-  	  	<rosparam file="$(find limo_bringup)/param/diff/costmap_common_params.yaml" command="load" ns="global_costmap" />
-  	 	<rosparam file="$(find limo_bringup)/param/diff/costmap_common_params.yaml" command="load" ns="local_costmap" />
-  		<rosparam file="$(find limo_bringup)/param/diff/local_costmap_params.yaml" command="load" />
-  		<rosparam file="$(find limo_bringup)/param/diff/global_costmap_params.yaml" command="load" />
-  		<rosparam file="$(find limo_bringup)/param/diff/planner.yaml" command="load" />
+  	  	<rosparam file="$(find limo_navigation)/param/diff/costmap_common_params.yaml" command="load" ns="global_costmap" />
+  	 	<rosparam file="$(find limo_navigation)/param/diff/costmap_common_params.yaml" command="load" ns="local_costmap" />
+  		<rosparam file="$(find limo_navigation)/param/diff/local_costmap_params.yaml" command="load" />
+  		<rosparam file="$(find limo_navigation)/param/diff/global_costmap_params.yaml" command="load" />
+  		<rosparam file="$(find limo_navigation)/param/diff/planner.yaml" command="load" />
 
 		<param name="base_global_planner" value="global_planner/GlobalPlanner" />
 		<param name="planner_frequency" value="1.0" />
@@ -38,6 +38,6 @@
 	</node> 
 
 	<!--  **************** Visualisation ****************  -->
-	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find limo_bringup)/rviz/navigation_diff.rviz"/>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find limo_navigation)/rviz/navigation_diff.rviz"/>
 </launch>
 

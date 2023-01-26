@@ -8,7 +8,6 @@
   <arg unless="$(arg localization)" name="args"  default="--delete_db_on_start"/>
 
   <group ns="rtabmap">
-
     <!-- Use RGBD synchronization -->
     <!-- Here is a general example using a standalone nodelet, 
          but it is recommended to attach this nodelet to nodelet 
