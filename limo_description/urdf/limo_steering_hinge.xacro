@@ -4,13 +4,9 @@
     <xacro:macro name="limo_left_steering_hinge" params="parent_prefix wheel_prefix *joint_pose">
         <link name="${wheel_prefix}">
             <inertial>
-                <mass value="0.1"/>
-                <origin xyz="0.0 0 0" rpy="0 0 0"/>
-                <inertia
-                    ixx="1e-6" ixy="0" ixz="0"
-                    iyy="1e-6" iyz="0"
-                    izz="1e-6"
-                />
+                <mass value="0.25" />
+                <inertia ixx="0.00525" ixy="0" ixz="0" iyy="0.00035" iyz="0" izz="0.00525" />
+                <origin xyz="0 0 0" />
             </inertial>
         </link>
 
@@ -54,13 +50,9 @@
     <xacro:macro name="limo_right_steering_hinge" params="parent_prefix wheel_prefix *joint_pose">
         <link name="${wheel_prefix}">
             <inertial>
-                <mass value="0.1"/>
-                <origin xyz="0.0 0 0" rpy="0 0 0"/>
-                <inertia
-                    ixx="1e-6" ixy="0" ixz="0"
-                    iyy="1e-6" iyz="0"
-                    izz="1e-6"
-                />
+                <mass value="0.25" />
+                <inertia ixx="0.00525" ixy="0" ixz="0" iyy="0.00035" iyz="0" izz="0.00525" />
+                <origin xyz="0 0 0" />
             </inertial>
         </link>
 
