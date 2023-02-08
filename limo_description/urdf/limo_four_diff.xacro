@@ -7,11 +7,6 @@
 
     <!-- Variables -->
     <xacro:property name="M_PI" value="3.14159"/>
-
-    <!-- Vehicle Geometries -->
-    <xacro:property name="base_x_size" value="0.13" />
-    <xacro:property name="base_y_size" value="0.12" />
-    <xacro:property name="base_z_size" value="0.1" />
   
     <xacro:property name="wheelbase" value="0.2"/>
     <xacro:property name="track" value="0.13"/>
@@ -24,9 +19,9 @@
     <link name="base_footprint"/>
 
     <joint name="base_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="base_footprint"/>
-    <origin xyz="0.0 0.0 -0.15" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="base_footprint"/>
+        <origin xyz="0.0 0.0 -0.15" rpy="0 0 0"/>
     </joint>
 
     <!-- Base link -->
@@ -46,9 +41,9 @@
         <inertial>
             <origin xyz="0.0 0.0 0.0" />
             <mass value="${base_mass}" />
-            <inertia ixx="0.24" ixy="0" ixz="0" 
-                     iyy="0.96" iyz="0" 
-                     izz="0.96" />
+            <inertia ixx="0.019264" ixy="0" ixz="0" 
+                     iyy="0.029586" iyz="0" 
+                     izz="0.02693" />
         </inertial>
     </link>
 
