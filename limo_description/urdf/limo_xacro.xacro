@@ -129,4 +129,6 @@
             <parent link="${parent_prefix}"/>
         </joint>
     </xacro:macro>
+
+    <xacro:include filename="$(optenv URDF_EXTENSION empty.urdf)" />
 </robot>
