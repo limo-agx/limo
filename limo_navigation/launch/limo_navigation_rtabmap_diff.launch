@@ -1,5 +1,5 @@
 <?xml version="1"?>
 <launch>
     <include file="$(find limo_navigation)/launch/limo_rtabmap.launch" />
-    <include file="$(find limo_navigation)/launch/limo_move_base_ackerman.launch" />
+    <include file="$(find limo_navigation)/launch/limo_move_base_diff.launch" />
 </launch>
