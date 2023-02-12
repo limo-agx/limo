@@ -17,8 +17,8 @@ include_directories(
 
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
-  roslaunch_add_file_check(launch/limo_amcl_ackerman.launch)
-  roslaunch_add_file_check(launch/limo_amcl_diff.launch)
+  roslaunch_add_file_check(launch/limo_navigation_amcl_ackerman.launch)
+  roslaunch_add_file_check(launch/limo_navigation_amcl_diff.launch)
   roslaunch_add_file_check(launch/limo_gmapping.launch)
   roslaunch_add_file_check(launch/limo_move_base_ackerman.launch)
   roslaunch_add_file_check(launch/limo_move_base_diff.launch)

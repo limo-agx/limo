@@ -89,13 +89,12 @@
                 will control the frame rate. -->
               <updateRate>0.0</updateRate>
               <cameraName>camera</cameraName>
-              <imageTopicName>/camera/rgb/image_rect_color</imageTopicName>
+              <imageTopicName>/camera/color/image_rect_color</imageTopicName>
               <cameraInfoTopicName>/camera/color/camera_info</cameraInfoTopicName>
-              <depthImageTopicName>/camera/depth/image</depthImageTopicName>
+              <depthImageTopicName>/camera/depth/image_raw</depthImageTopicName>
               <depthImageCameraInfoTopicName>/camera/depth/camera_info</depthImageCameraInfoTopicName>
               <pointCloudTopicName>/camera/depth/points</pointCloudTopicName>
               <frameName>depth_link</frameName>
-              
               <pointCloudCutoff>0.5</pointCloudCutoff>
               <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
               <distortionK1>0</distortionK1>
@@ -110,7 +109,7 @@
               <hackBaseline>0</hackBaseline>
             </plugin>
         </sensor>
-          </gazebo>
+      </gazebo>
     </xacro:macro>
 
     <xacro:macro name="gazebo_imu" params="frame_prefix">
