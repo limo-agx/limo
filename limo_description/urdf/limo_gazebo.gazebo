@@ -89,7 +89,7 @@
                 will control the frame rate. -->
               <updateRate>0.0</updateRate>
               <cameraName>camera</cameraName>
-              <imageTopicName>/camera/color/image_rect_color</imageTopicName>
+              <imageTopicName>/camera/color/image_raw</imageTopicName>
               <cameraInfoTopicName>/camera/color/camera_info</cameraInfoTopicName>
               <depthImageTopicName>/camera/depth/image_raw</depthImageTopicName>
               <depthImageCameraInfoTopicName>/camera/depth/camera_info</depthImageCameraInfoTopicName>
